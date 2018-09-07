@@ -1,0 +1,45 @@
+package com.mystudy.burgerproject;
+
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
+public class SumTest {
+
+	public static void main(String[] args) {
+		Sum sum = new Sum();
+		
+		int bgSum = sum.burgerSum();  //버거 전체 가격
+		int drSum = sum.drinkSum();   //음료 전체가격
+		int dsSum = sum.dessertSum();  //디저트 전체 가격
+		Date dt = new Date();
+		
+		
+		
+		SimpleDateFormat today = new SimpleDateFormat("[yyyy/MM/dd]");
+		System.out.println("====================계산서=====================");
+		System.out.println(today.format(dt));
+		System.out.println();
+		System.out.println("★  버거: " + "\t"+ bgSum);
+		System.out.println("★  음료수: " +drSum);
+		System.out.println("★  디저트:"  + dsSum);
+		System.out.println("▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼");
+		System.out.println("★  합계:" + (bgSum + drSum+ dsSum));
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+		
+//		int sum =0;
+//		
+//		sum +=sum.burgerSum();
+//		
+
+	}
+
+}
